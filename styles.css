@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+.yellow {
+  background-color: var(--bright-orange);
+}
+.blue {
+  background-color: var(--dark-cyan);
+}
+.green {
+  background-color: var(--very-dark-cyan);
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  width: 864px;
+  height: 480px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.content {
+  margin: 45px 44px 20px 40px;
+}
+.icon {
+  width: 60px;
+  margin-bottom: 30px;
+}
+.heading {
+  font-family: "Big Shoulders Display";
+  color: var(--very-light-gray);
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.description {
+  color: var(--transparent-white-p);
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 85px;
+}
+.yellow .learn {
+  color:hsl(31, 77%, 52%);
+}
+.blue .learn {
+  color:hsl(184, 100%, 22%)
+}
+.green .learn {
+  color:hsl(179, 100%, 13%)
+}
+.learn {
+  font-size: 12px;
+  text-decoration: none;
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  padding: 14px 30px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+}
+.learn:hover {
+  color: var(--very-light-gray);
+  background: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin: 20px auto;
+    flex-direction: column;
+    width: 330px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .description {
+    margin-bottom: 30px;
+  }
+  .learn {
+    margin-bottom: 20px;
+  }
+}
